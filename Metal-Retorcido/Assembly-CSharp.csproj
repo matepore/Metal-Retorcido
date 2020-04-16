@@ -55,7 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Bala.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
+     <Compile Include="Assets\Scripts\Destroyable.cs" />
+     <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Otro/Repositorios/Programacion 1 - TP/Metal-Retorcido/Metal-Retorcido/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

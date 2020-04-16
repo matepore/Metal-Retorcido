@@ -22,6 +22,11 @@ public class PlayerController : MonoBehaviour
 
         auto.Move(direccion);
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            auto.Fire();
+        }
+
         //La camara persigue al personaje.
         Camera.main.transform.position = this.transform.position + Vector3.back * 10;
     }
