@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1630297200809050287}
   - component: {fileID: 1630297200809050280}
   - component: {fileID: 1630297200809050281}
-  - component: {fileID: 1630297200809050286}
   - component: {fileID: -8234233543615837108}
   m_Layer: 0
   m_Name: Character
@@ -97,8 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2ecb0b47c074a49a461fe3df5db799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 9
   rotationSpeed: 2
+  fireRate: 0.2
   prefabBala: {fileID: 4918188271617604123, guid: 1e81d3f0b4fce4943879e1dbf46553c0,
     type: 3}
 --- !u!61 &1630297200809050280
@@ -148,18 +148,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1630297200809050286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630297200809050276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d047ed20b345b0f4f897b7b6f8e99a7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-8234233543615837108
 MonoBehaviour:
   m_ObjectHideFlags: 0

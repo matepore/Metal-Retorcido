@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
         auto.Move(direccion);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             auto.Fire();
         }

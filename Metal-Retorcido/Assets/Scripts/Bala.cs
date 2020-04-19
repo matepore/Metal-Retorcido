@@ -18,4 +18,9 @@ public class Bala : MonoBehaviour
     {
         GameObject.Destroy(this.gameObject);
     }
+
+    void OnBecameInvisible()
+    {
+        GameObject.Destroy(this.gameObject);
+    }
 }
