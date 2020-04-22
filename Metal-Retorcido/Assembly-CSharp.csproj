@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\AIController.cs" />
      <Compile Include="Assets\Scripts\Bala.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
+     <Compile Include="Assets\Scripts\Consumible.cs" />
      <Compile Include="Assets\Scripts\Destroyable.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />

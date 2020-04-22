@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Machinegun
+  - Fire
+  - Homing
+  - Power
+  - Auto
+  - ConsumibleBala
+  - ConsumibleCuracion
   layers:
   - Default
   - TransparentFX
