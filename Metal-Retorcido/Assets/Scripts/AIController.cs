@@ -40,7 +40,6 @@ public class AIController : MonoBehaviour
                 //Pregunto por si esa distancia está dentro de un rango especifico o no. Si esta dentro, significa que el personaje puede ver su objetivo.
                 if (distancia < 9.5f)
                 {
-
                     //Veo a mi objetivo
                     transform.up = enemigo.transform.position - transform.position;
                     auto.Fire();

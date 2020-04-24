@@ -5,15 +5,14 @@ using UnityEngine;
 public class Consumible : MonoBehaviour
 {
     public GameObject prefabBala;
+    Rigidbody2D rb;
 
     void Update()
     {
-        //Genero un vector3 para decirle que gire en z para dar la ilusión de un objeto consumible
-        Vector3 giro;
-        giro.x = 0;
-        giro.y = 0;
-        giro.z = 10;
-        transform.Rotate(giro);
+        rb = GetComponent<Rigidbody2D>();
+
+        //Genero una rotación en el objeto para simular los consumibles del twisted metal
+        rb.rotation += -10;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

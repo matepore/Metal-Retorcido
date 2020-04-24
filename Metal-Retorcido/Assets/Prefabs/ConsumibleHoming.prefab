@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4987979972699999364}
   - component: {fileID: 4987979972699999371}
   - component: {fileID: 4987979972699999370}
+  - component: {fileID: 1931073282015082379}
   m_Layer: 0
   m_Name: ConsumibleHoming
   m_TagString: ConsumibleBala
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ffb36c1667462ef4991ddd22b7d5e52a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -122,3 +123,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.03567146, y: 0.11208567}
   m_EdgeRadius: 0
+--- !u!50 &1931073282015082379
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987979972699999369}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
