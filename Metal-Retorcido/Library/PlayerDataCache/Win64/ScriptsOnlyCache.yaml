@@ -7,18 +7,44 @@ ScriptsOnlyBuild:
     - Consumible
     - Destroyable
     - Destroyer
+    - HealthBar
+    - MenuGameOver
+    - MenuPausa
+    - MenuPrincipal
+    - MenuWin
+    - Movimiento
     - PlayerController
+    - TextoArmas
+    - TextoDisparar
+    - TextoObjetivo
+    - TextoVida
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_ColorGradient
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Batalla.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -37,31 +63,231 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 68
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9686}
+      Script: {instanceID: 9696}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9708}
     - Class: 114
-      Script: {instanceID: 9932}
+      Script: {instanceID: 9832}
     - Class: 114
-      Script: {instanceID: 10054}
+      Script: {instanceID: 9902}
     - Class: 114
-      Script: {instanceID: 10428}
+      Script: {instanceID: 9954}
     - Class: 114
-      Script: {instanceID: 10976}
+      Script: {instanceID: 10076}
     - Class: 114
-      Script: {instanceID: 11498}
+      Script: {instanceID: 10172}
+    - Class: 114
+      Script: {instanceID: 10308}
+    - Class: 114
+      Script: {instanceID: 10426}
+    - Class: 114
+      Script: {instanceID: 10456}
+    - Class: 114
+      Script: {instanceID: 10470}
+    - Class: 114
+      Script: {instanceID: 10686}
+    - Class: 114
+      Script: {instanceID: 10908}
+    - Class: 114
+      Script: {instanceID: 11006}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11162}
+    - Class: 114
+      Script: {instanceID: 11528}
+    - Class: 114
+      Script: {instanceID: 11534}
+    - Class: 114
+      Script: {instanceID: 11568}
+    - Class: 114
+      Script: {instanceID: 20272}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/HowtoPlay.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9696}
+    - Class: 114
+      Script: {instanceID: 9708}
+    - Class: 114
+      Script: {instanceID: 9832}
+    - Class: 114
+      Script: {instanceID: 9862}
+    - Class: 114
+      Script: {instanceID: 9902}
+    - Class: 114
+      Script: {instanceID: 9954}
+    - Class: 114
+      Script: {instanceID: 10076}
+    - Class: 114
+      Script: {instanceID: 10172}
+    - Class: 114
+      Script: {instanceID: 10308}
+    - Class: 114
+      Script: {instanceID: 10426}
+    - Class: 114
+      Script: {instanceID: 10456}
+    - Class: 114
+      Script: {instanceID: 10470}
+    - Class: 114
+      Script: {instanceID: 10686}
+    - Class: 114
+      Script: {instanceID: 10908}
+    - Class: 114
+      Script: {instanceID: 11006}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11162}
+    - Class: 114
+      Script: {instanceID: 11528}
+    - Class: 114
+      Script: {instanceID: 11534}
+    - Class: 114
+      Script: {instanceID: 11568}
+    - Class: 114
+      Script: {instanceID: 20272}
+    - Class: 114
+      Script: {instanceID: 112100}
+    - Class: 114
+      Script: {instanceID: 132478}
+    - Class: 114
+      Script: {instanceID: 145362}
+    - Class: 114
+      Script: {instanceID: 155426}
+    - Class: 114
+      Script: {instanceID: 160380}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MenuPrincipal.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9696}
+    - Class: 114
+      Script: {instanceID: 9902}
+    - Class: 114
+      Script: {instanceID: 10308}
+    - Class: 114
+      Script: {instanceID: 10328}
+    - Class: 114
+      Script: {instanceID: 10420}
+    - Class: 114
+      Script: {instanceID: 10686}
+    - Class: 114
+      Script: {instanceID: 10908}
+    - Class: 114
+      Script: {instanceID: 10922}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11162}
+    - Class: 114
+      Script: {instanceID: 11328}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11534}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -228,6 +454,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 2340d4061212aa7500dd68a951fe1417
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuGameOver
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -276,10 +508,28 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 711b5ea832612cb3c809c03450f52596
+      Hash: b69c51b4cd55babc908fc6ad64e257eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuPrincipal
+  - hash:
+      serializedVersion: 2
+      Hash: 10ddf6c5116138f3c5c4201e749793ee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuPausa
+  - hash:
+      serializedVersion: 2
+      Hash: 67d3b0a1b80e35fa4eb9eeb50342e99f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Destroyable
+  - hash:
+      serializedVersion: 2
+      Hash: 579f154da507d50db9849e7c042920ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthBar
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -520,7 +770,45 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: eae430d26b53bc31c9d6e86953f72bac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuWin
+  - hash:
+      serializedVersion: 2
+      Hash: d050a905afec886d7b4c84f38d61abea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Movimiento
+  - hash:
+      serializedVersion: 2
+      Hash: a796a6ec0241d23b424f8d279334c06c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TextoDisparar
+  - hash:
+      serializedVersion: 2
+      Hash: 1847d0a86951f12d236db585fc5bceaa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TextoArmas
+  - hash:
+      serializedVersion: 2
+      Hash: adc01e94405d1b7b1cf0835715010e06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TextoVida
+  - hash:
+      serializedVersion: 2
+      Hash: 9a47a38d6f6af3f9b95a7f732b5f664a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TextoObjetivo
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/MenuPrincipal.unity
+  - Assets/Scenes/Batalla.unity
+  - Assets/Scenes/HowtoPlay.unity
   playerPath: C:/Users/user/Desktop/Metal Retorcido/Metal-Retorcido.exe

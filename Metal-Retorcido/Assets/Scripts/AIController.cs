@@ -38,7 +38,7 @@ public class AIController : MonoBehaviour
                 distancia = Vector3.Distance(enemigo.transform.position, transform.position);
 
                 //Pregunto por si esa distancia está dentro de un rango especifico o no. Si esta dentro, significa que el personaje puede ver su objetivo.
-                if (distancia < 9.5f)
+                if (distancia < 6.5f)
                 {
                     //Veo a mi objetivo
                     transform.up = enemigo.transform.position - transform.position;
