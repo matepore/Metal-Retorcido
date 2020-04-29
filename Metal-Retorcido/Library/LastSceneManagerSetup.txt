@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Batalla.unity
+- path: Assets/Scenes/HowtoPlay.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -31,9 +31,9 @@ public class MenuPausa : MonoBehaviour
 
     public void Resumir()
     {
-        menuPausaUI.SetActive(false);
         Time.timeScale = 1f;
         JuegoEstaPausado = false;
+        menuPausaUI.SetActive(false);
     }
 
     void Pausar()
@@ -45,9 +45,9 @@ public class MenuPausa : MonoBehaviour
 
     public void IrMenu()
     {
-        menuPausaUI.SetActive(false);
         Time.timeScale = 1f;
         JuegoEstaPausado = false;
+        menuPausaUI.SetActive(false);
         SceneManager.LoadScene(escenaMenu);
     }
     

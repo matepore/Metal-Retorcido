@@ -26,15 +26,24 @@ public class Consumible : MonoBehaviour
                 collision.gameObject.GetComponent<Character>().prefabBala = prefabBala;
                 GameObject.Destroy(this.gameObject);
             }
+
             //Acá verifico si es un consumible de curacion y hago que cumpla su comportamiento
             else if(this.gameObject.tag == "ConsumibleCuracion")
             {
-                int life = collision.gameObject.GetComponent<Destroyable>().life;
-                life += 150;
-                if(life > 300)
+                int vida;
+                int vidaMaxima;
+
+                //Traigo la vida del personaje y le sumo 150, si al hacer eso supera la maxima vida, se la seteo al maximo.
+                vida = collision.gameObject.GetComponent<Destroyable>().life;
+                vidaMaxima = collision.gameObject.GetComponent<Destroyable>().maxLife;
+
+                vida += 150;
+
+                if(vida > vidaMaxima)
                 {
-                    life = 300;
+                    vida = vidaMaxima;
                 }
+                collision.gameObject.GetComponent<Destroyable>().SetearVida(vida);
                 GameObject.Destroy(this.gameObject);
             }
         }

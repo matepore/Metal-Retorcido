@@ -11,6 +11,7 @@ TagManager:
   - Auto
   - ConsumibleBala
   - ConsumibleCuracion
+  - ObjetoMapa
   layers:
   - Default
   - TransparentFX
